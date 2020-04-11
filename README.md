@@ -1,2 +1,3 @@
-# workshopDev-especial
- Casa Criativa
+# Casa Criativa
+
+Projeto desenvolvido no WorkshopDev Especial, disponibilizado pela Rocketseat.
