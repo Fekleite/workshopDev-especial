@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Casa Criativa</title>
   </head>
@@ -44,8 +48,8 @@
         </footer>
       </section>
 
-      <section id="last-ideias">
-        <div class="ideia">
+      <section id="last-ideas">
+        <div class="idea">
           <img
             src="https://image.flaticon.com/icons/svg/2729/2729007.svg"
             alt="Ícone curso de programação"
@@ -63,7 +67,7 @@
           </div>
         </div>
 
-        <div class="ideia">
+        <div class="idea">
           <img
             src="https://image.flaticon.com/icons/svg/2729/2729005.svg"
             alt="Ícone exercícios"
@@ -81,7 +85,7 @@
           </div>
         </div>
 
-        <div class="ideia">
+        <div class="idea">
           <img
             src="https://image.flaticon.com/icons/svg/2729/2729027.svg"
             alt="Ícone meditação"
@@ -99,6 +103,50 @@
           </div>
         </div>
       </section>
+    </div>
+
+    <!-- Modal -->
+
+    <div id="modal">
+      <div class="content">
+        <h1>Nova Ideia</h1>
+
+        <form action="">
+          <div class="input-wrapper">
+            <label for="title">Título da ideia</label>
+            <input type="text" name="title" id="title" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="category">Categoria</label>
+            <input type="text" name="category" id="category" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="link-img">Link da imagem</label>
+            <input type="url" name="link-img" id="link-img" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="description"
+              >Digite uma descrição para essa ideia</label
+            >
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="link-idea">Link da ideia</label>
+            <input type="url" name="link-idea" id="link-idea" />
+          </div>
+
+          <button>Salvar</button>
+        </form>
+      </div>
     </div>
 
     <script src="script.js"></script>
