@@ -1,3 +1,5 @@
+/* global */
+
 * {
   box-sizing: border-box;
 }
@@ -10,6 +12,10 @@ body {
   color: #25282b;
 
   font-family: "Montserrat", sans-serif;
+}
+
+body.hideScroll {
+  overflow: hidden;
 }
 
 a {
@@ -25,6 +31,34 @@ p,
   letter-spacing: 0.1px;
 }
 
+.button {
+  color: white;
+  background: #ff5e84;
+
+  width: 150px;
+  height: 40px;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0px 8px 16px #ff5e8432;
+
+  transition: 400ms;
+}
+
+.button:hover {
+  text-decoration: none;
+  background: #0984e3;
+}
+
+/* padrão */
+
 #container {
   width: 90%;
   max-width: 980px;
@@ -38,7 +72,7 @@ p,
 #intro {
   width: 300px;
 
-  margin-right: 20px;
+  margin-right: 64px;
 }
 
 main {
@@ -68,22 +102,6 @@ button:hover {
   justify-content: space-evenly;
 
   margin-bottom: 32px;
-}
-
-button.fat {
-  color: white;
-  background: #ff5e84;
-
-  width: 150px;
-  height: 40px;
-
-  border-radius: 6px;
-
-  box-shadow: 0px 8px 16px #ff5e8432;
-}
-
-button.fat:hover {
-  text-decoration: none;
 }
 
 footer {
@@ -141,19 +159,27 @@ footer a {
 
   position: absolute;
   top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
-  width: 100vw;
-  height: 100vh;
+  /*width: 100vw;
+  height: 100vh;*/
 
   display: flex;
-  align-items: center;
   justify-content: center;
 
   transition: 600ms;
 }
 
+#modal.addScroll {
+  overflow: auto;
+}
+
 #modal .content {
   color: #fff;
+
+  margin-top: 100px;
 }
 
 #modal .content h1 {
@@ -162,11 +188,11 @@ footer a {
   text-transform: uppercase;
 }
 
-#modal .content form {
+#modal form {
   width: 80%;
   max-width: 800px;
 
-  margin: 0 auto;
+  margin: 0 auto 15%;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -252,4 +278,69 @@ form button:hover {
 #modal.hide {
   opacity: 0;
   visibility: hidden;
+}
+
+/* ideas.html */
+
+#page-ideas #container {
+  display: block;
+}
+
+#page-ideas header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#page-ideas nav {
+  display: flex;
+  align-items: center;
+}
+
+#page-ideas nav li {
+  list-style: none;
+
+  margin-right: 16px;
+}
+
+#page-ideas nav li a {
+  color: #25282b;
+}
+
+#page-ideas nav li a.button {
+  color: #fff;
+}
+
+#page-ideas nav li:last-child {
+  margin: 0;
+}
+
+#page-ideas section#title {
+  text-align: center;
+}
+
+#page-ideas section#title p {
+  opacity: 0.7;
+  margin: 0;
+}
+
+#page-ideas section#title h1 {
+  margin: 0;
+
+  font-size: 28px;
+}
+
+#page-ideas section#ideas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#page-ideas section#ideas .idea {
+  margin: 0;
+}
+
+#page-ideas section#title,
+#page-ideas section#ideas,
+footer {
+  margin-top: 64px;
 }
