@@ -2,7 +2,7 @@
   <div class="content">
     <h1>Nova Ideia</h1>
 
-    <form action="">
+    <form action="/" method="POST" onsubmit="return checkFields(event)">
       <div class="input-wrapper">
         <label for="title">Título da ideia</label>
         <input type="text" name="title" id="title" />
@@ -14,8 +14,8 @@
       </div>
 
       <div class="input-wrapper">
-        <label for="link-img">Link da imagem</label>
-        <input type="url" name="link-img" id="link-img" />
+        <label for="image">Link da imagem</label>
+        <input type="url" name="image" id="image" />
       </div>
 
       <div class="input-wrapper">
@@ -29,8 +29,8 @@
       </div>
 
       <div class="input-wrapper">
-        <label for="link-idea">Link da ideia</label>
-        <input type="url" name="link-idea" id="link-idea" />
+        <label for="url">Link da ideia</label>
+        <input type="url" name="url" id="url" />
       </div>
 
       <a href="#" onclick="onOff()">Voltar</a>
